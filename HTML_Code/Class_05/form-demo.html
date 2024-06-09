@@ -7,6 +7,10 @@
 <body>
    <!-- Start of the form element -->
    <form>
+      <fieldset>
+         <legend>
+            Registration Form
+        </legend>
       <table>
          <tr>
             <td>
@@ -14,17 +18,17 @@
             </td>
            
             <td>
-               <input type = "text" name = "first_name" required/>
+               <input type = "text" name = "first_name" maxlength="8" placeholder="Your Name" required />
             </td>
          </tr>
 
          <tr>
             <td>
-               <label for="father_name">Father Name:</label>
+               <label for="password">Password:</label>
             </td>
            
             <td>
-               <input type = "text" name = "first_name" required/>
+               <input type = "password" name = "password" required/>
             </td>
          </tr>
 
@@ -35,15 +39,44 @@
             </td>
            
             <td>
-               Male <input type = "radio" >
-               Female <input type = "radio" >
+               Male <input type = "radio" name="gender"  value="male">
+               Female <input type = "radio" name="gender" value="female" >
             </td>
          </tr>
+
+
+         <tr>
+            <td>
+               <label for="Gender">Activities</label>
+            </td>
+           
+            <td>
+               Sports <input type = "checkbox" value="sp">
+               Internet Surfing <input type = "checkbox" alue="int" >
+               Book Reading <input type = "checkbox" >
+            </td>
+         </tr>
+        
+<tr>
+<td>
+   <label for="subjects">subjects</label>
+</td>
+<td>
+      <select name = "subjects">
+      <option value = "Maths" selected>Maths</option>
+      <option value = "Physics">Physics</option>
+      <option value = "Chemistry">Chemistry</option>
+   </select>
+</td>
+</tr>
+
       </table>
-      <br>
-             
+
+     <br>
+
       <input type = "submit">
-   
+      <input type = "reset">
+   </fieldset>
    </form>
 </body>
 </html>
