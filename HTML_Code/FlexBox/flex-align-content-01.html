@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Alignment of Flex Container's Lines</title>
+<style> 
+.flex-container {
+    width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+	font-size: 32px;
+    border: 1px solid #666;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap; /* wrap items to create multi-row flex container */
+    -webkit-align-content: space-around;
+    /* Standard syntax */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+.flex-container div {
+	width: 150px;
+	height: 100px;
+}
+.red {
+    background: #e84d51;
+}
+.green {;
+    background: #7ed636;
+}
+.blue {
+    background: #2f97ff;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+        <div class="green">4</div>
+        <div class="blue">5</div>
+        <div class="red">6</div>
+    </div>
+    <p><strong>Note:</strong> Try the other values for the align-content property like, "flex-start", "flex-end", "center", "space-between" and "stretch" to understand how it aligns the items inside flex container.</p>
+</body>
+</html>

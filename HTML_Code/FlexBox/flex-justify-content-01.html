@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Flex Items Alignment along Main Axis</title>
+<style> 
+.flex-container {
+    width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+	font-size: 32px;
+    border: 1px solid #666;
+    /* Safari */
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    /* Standard syntax */
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container div{
+    padding: 10px;
+}
+.item1 {
+    width: 75px;
+    background: #e84d51;
+}
+.item2 {
+    width: 125px;
+    background: #7ed636;
+}
+.item3 {
+    width: 175px;
+    background: #2f97ff;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
+    <p><strong>Note:</strong> Try the other values for the justify-content property like, "flex-start", "flex-end", "center" and "space-between" to understand how it aligns the items inside flex container.</p>
+</body>
+</html>

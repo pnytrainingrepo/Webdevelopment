@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Three Equal Flex Column Layout</title>
+<style>
+.flex-container {
+	width: 100%;
+	min-height: 200px;
+	margin: 0 auto;
+	font-size: 32px;
+	display: flex; /* Standard syntax */
+	flex-direction: column-reverse;
+	border: 2px solid #808080;
+}
+.flex-container div {
+	padding: 10px;
+	background: #dbdfe5;
+	flex: 1; /* Standard syntax */
+}
+.flex-container div.bg-second{
+	background: #b4bac0;
+}
+
+.flex-container div.bg-third{
+	background: #2577c8;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">Item 1</div>
+        <div class="item2 bg-second">Item 2</div>
+        <div class="item3">Item 3</div>
+		<div class="item4 bg-third">Item 4</div>
+		<div class="item5">Item 5</div>
+    </div>
+    <p><strong>Note:</strong> If you change the width of the flex-container the width of the flex items will automatically adjusted without doing anything.</p>
+</body>
+</html>
