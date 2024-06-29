@@ -1,0 +1,35 @@
+<html>
+ <head>
+<title>
+     My First Java Script
+</title>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+ <script>
+    function msg() {
+        alert("Hello PNY WEB Class");
+        }
+ </script>
+
+ </head> 
+<body> 
+    
+    <div id = "output"> </div>
+    <div id = "output1"> </div>
+
+    <script>
+        document.write("<h1> Hello World [document write] </h1>"); 
+        document.write("<HR>");
+        //alert("Hello World");
+        console.log("Hello World");
+        document.getElementById("output").innerHTML = "Hello World 1"; 
+        document.getElementById("output1").innerHTML = "Java Script Class"; 
+        
+    </script>
+
+    <form>
+        <input type="button" value="click here" onclick="msg()"/>
+    </form>
+        
+
+</body>
+ </html>
