@@ -1,0 +1,114 @@
+<html>
+ <head>
+<title>
+     My First Java Script
+</title>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+ <script>
+    function msg() {
+        alert("Hello PNY WEB Class");
+        }
+ </script>
+
+ </head> 
+<body> 
+    
+   
+   
+    <script>
+
+        function sum() {
+       
+        var a =10;
+        var b =20;
+        var sum=a+b;
+        console.log("The sum of"+a+" & "+b+ "=" +sum);
+        }
+
+        function sub() {
+       
+            var a =10;
+            var b =20;
+            var sub=a-b;
+            console.log("The sub of"+a+" & "+b+ "=" +sub);
+            }
+    
+
+        function multiply() {
+       
+            var a =10;
+            var b =20;
+            var mul=a*b;
+            console.log("The multiply of "+a+" & "+b+ "=" +mul);
+            }
+
+        function divide() {
+       
+                var a =40;
+                var b =20;
+                var div=a/b;
+                console.log("The divide of "+a+" & "+b+ "=" +div);
+                }
+
+        function Mod() {
+       
+                    var a =7;
+                    var b =5;
+                    var div=a % b;
+                    console.log("The Mode of "+a+" & "+b+ "=" +div);
+                    }
+
+        function comparison() {
+       
+                        var a =4;
+                        var b =5;
+                        var result=(a > b) || (a >= b);
+                        console.log("The Value of "+a+" > "+b+ "=" +result);
+                        }
+
+        
+        function conditionstat() {
+       
+                            var a =6;
+                            var b =5;
+                            if (a>b) {
+
+                                console.log("The Value of First number "+a+" > the second number "+b);
+                            }
+                                else
+                                {
+                                    console.log("The Value of First number "+a+" < the second number "+b);
+                                }
+                            }
+                         
+
+
+        
+
+        var name = "PNY";
+
+        document.write("<h1> Hello World [document write] </h1>"); 
+        //console.log("value of a ="+a);
+        //document.write("value of a ="+a);
+        document.write("<br>");
+        document.write("The name of Institute ="+name);
+
+        
+        //document.getElementById("output1").innerHTML = "Java Script Class"; 
+        
+    </script>
+
+    <div id = "output"> </div>
+
+    <form>
+        <input type="button" value="Sum here" onclick="sum()"/>
+        <input type="button" value="Subtract here" onclick="sub()"/>
+        <input type="button" value="Multilpy here" onclick="multiply()"/>
+        <input type="button" value="Divide here" onclick="divide()"/>
+        <input type="button" value="Mod here" onclick="Mod()"/>
+        <input type="button" value="Condition here" onclick="conditionstat()"/>
+    </form>
+        
+
+</body>
+ </html>
