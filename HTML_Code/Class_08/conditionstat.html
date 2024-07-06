@@ -1,0 +1,134 @@
+<html>
+ <head>
+<title>
+     My First Java Script
+</title>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+ <script>
+    function msg() {
+        alert("Hello PNY WEB Class");
+        }
+ </script>
+
+ </head> 
+<body> 
+    
+     
+    <script>
+               
+        function conditionstat() {
+       
+                            var a =6;
+                            var b =5;
+                            if (a>b) {
+
+                                console.log("The Value of First number "+a+" > the second number "+b);
+                            }
+                                else
+                                {
+                                    console.log("The Value of First number "+a+" < the second number "+b);
+                                }
+                            }
+
+
+        function awardGrade() {
+       
+            let percentage = prompt("Please enter your percentage:");
+
+            // Convert the input to a number
+            percentage = Number(percentage);
+            
+            // Check the grade based on the percentage
+            if (percentage >= 90) {
+                console.log("Grade A+");
+            } else if (percentage >= 80 && percentage < 90) {
+                console.log("Grade A");
+            } else if (percentage >= 70 && percentage < 80) {
+                console.log("Grade B");
+            } else if (percentage >= 60 && percentage < 70) {
+                console.log("Grade C");
+            } else {
+                console.log("Grade F");
+            }
+                                }
+
+
+                                function calculateTax() {
+       
+                                    let salary = prompt("Please enter your Annual Gross Salary:");
+                                    let  tax = 0;
+                        
+                                    // Convert the input to a number
+                                    salary = Number(salary);
+                                    
+                                    // Check the grade based on the percentage
+                                    if (salary < 600000) {
+                                        tax = 0;
+                                        console.log("Salary exempted from tax: " +tax);
+                                    } else if (salary >= 600000 && salary < 1200000) {
+                                        tax = (salary - 600000) * 0.05
+                                        console.log("Tax on Salary: " +tax);
+                                    
+                                    } else {
+                                        console.log("Do your Own");
+                                    }
+                                                        }
+
+                            function switchcal() {
+
+                                switch (new Date().getDay()) {
+                                    case 0:
+                                      day = "Sunday";
+                                      console.log(day);
+                                      break;
+                                    case 1:
+                                      day = "Monday";
+                                      console.log(day);
+                                      break;
+                                    case 2:
+                                       day = "Tuesday";
+                                       console.log(day);
+                                      break;
+                                    case 3:
+                                      day = "Wednesday";
+                                      console.log(day);
+                                      break;
+                                    case 4:
+                                      day = "Thursday";
+                                      console.log(day);
+                                      break;
+                                    case 5:
+                                      day = "Friday";
+                                      console.log(day);
+                                      break;
+                                    case 6:
+                                      day = "Saturday";
+                                      console.log(day);
+                                  }
+
+
+                            }
+                         
+
+
+        
+
+       
+        document.write("<h1> Hello World [document write] </h1>"); 
+                
+        //document.getElementById("output1").innerHTML = "Java Script Class"; 
+        
+    </script>
+
+    <div id = "output"> </div>
+
+    <form>
+           <input type="button" value="Condition here" onclick="conditionstat()"/>
+           <input type="button" value="Award Grade" onclick="awardGrade()"/>
+           <input type="button" value="Calculate Tax" onclick="calculateTax()"/>
+           <input type="button" value="Switch Function" onclick="switchcal()"/>
+    </form>
+        
+
+</body>
+ </html>
