@@ -1,0 +1,35 @@
+.text-animation {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span {
+    position: relative;
+}
+.text-animation span::before {
+    content: 'Web Developer';
+    color: var(--main-color);
+    animation: words 20s infinite ;
+}
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+--------------------------
+HTML CODE
+--------------------------------
+
+<h1>I'm M <span>Moeed</span> Rana</h1>
+                <h3 class="text-animation">
+                    I'm a <span></span>
+                </h3>
+                <p>
+                    I am M Moeed Rana, a Full Stack Web Developer and Naat Khawan based in Shahdara Town, Lahore. Currently, I have done  BS in Computer Science from GCUF and a Full Stack Web Development course from PNY Training Institute. My academic background includes FSc Pre-Medical from Punjab College and matriculation from Stars Academy. I am passionate about creating impactful digital solutions.
+                </p>

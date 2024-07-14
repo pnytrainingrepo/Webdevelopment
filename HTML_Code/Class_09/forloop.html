@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title> JavaScript - for loop </title>
+</head>
+<body>
+    <p id = "output"> </p>
+    <script>        
+        const output = document.getElementById("output");
+        output.innerHTML = "Starting Loop <br>";
+        //let count;
+        for (let count = 0; count < 10; count++) {
+            output.innerHTML += "Current Count : " + count + "<br/>";
+            alert(count);
+        }
+        output.innerHTML += "Loop stopped!";
+    </script>
+</body>
+</html>
