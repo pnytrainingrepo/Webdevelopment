@@ -5,7 +5,7 @@
 <body>
 <script>
   //Decalartion of Object
-  const person = {
+ /* const person = {
     fname:"John",
     lname:"Doe", 
     age:25
@@ -41,6 +41,65 @@
   for (let i=0; i < numbers.length; i++) {
     console.log(numbers[x]);
   }
+
+
+  // Create an Object
+  /*
+  const person =  {
+  firstName:"John",
+  lastName:"Doe",
+  fullname: = function() {
+  return this.name +" "+this.fname; }
+  age:50,
+  isActive: false,
+  eyeColor: "blue"
+};
+*/
+
+//const userinfo= {};
+const userinfo = new Object();
+
+userinfo.name="Azam";
+userinfo.fname="Rashid";
+userinfo.sex="male";
+userinfo.fullname= function() {
+  return this.name +" "+this.fname;
+ }
+
+console.log(userinfo);
+
+//Defining Array
+
+const fruits = ["   Banana","Orange","Apple","Mango"];
+const vegi= ["Carrot","Cabbage"];
+console.log(fruits.toString());
+//console.log(fruits.length);
+fruits.pop();
+console.log(fruits.toString());
+console.log(fruits.concat(vegi));
+
+
+// STRING METHODS
+let text ="Apple, Banana, Kiwi     ";
+console.log(text.length);
+console.log(text.charCodeAt(1));
+console.log(text.slice(7));
+//console.log(text);
+console.log(text.trim());
+//console.log(text.indexOf("Banana"));
+console.log(text.search("Banana"));
+
+
+const user =  {
+  firstName:"John",
+  lastName:"Doe",
+  fullname:  function() {
+  return this.name +" S/O:"+this.fname; },
+  age:50,
+  education: "Mphil"
+  
+};
+
   
 
 </script>
