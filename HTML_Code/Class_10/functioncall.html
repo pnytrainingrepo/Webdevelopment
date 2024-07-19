@@ -1,0 +1,152 @@
+<html>
+ <head>
+<title>
+     Java Script Functions
+</title>
+ </head> 
+<body> 
+    
+     
+    <script>
+               
+        function conditionstat() {
+       
+                            var a =6;
+                            var b =5;
+                            if (a>b) {
+
+                                console.log("The Value of First number "+a+" > the second number "+b);
+                            }
+                                else
+                                {
+                                    console.log("The Value of First number "+a+" < the second number "+b);
+                                }
+                            }
+
+
+                                       function calculateTax() {
+       
+                                    let salary = prompt("Please enter your Annual Gross Salary:");
+                                    let  tax = 0;
+                        
+                                    // Convert the input to a number
+                                    salary = Number(salary);
+                                    
+                                    // Check the grade based on the percentage
+                                    if (salary < 600000) {
+                                        tax = 0;
+                                        console.log("Salary exempted from tax: " +tax);
+                                    } else if (salary >= 600000 && salary < 1200000) {
+                                        tax = (salary - 600000) * 0.05
+                                        console.log("Tax on Salary: " +tax);
+
+                                    } else if (salary >= 1200000 && salary < 2200000) {
+                                        tax = (salary - 600000) * 0.10
+                                        console.log("Tax on Salary: " +tax);
+                                    
+                                    } else {
+                                        console.log("Do your Own");
+                                    }
+                                                        }
+
+                            
+
+                            function Calculator() {
+                                let loop="";
+                                do {
+                                let result=0;
+                                let num1 = prompt("Enter the First Number: ");
+                                num1 = Number(num1);
+
+                                let num2 = prompt("Enter the Second Number: ");
+                                num2 = Number(num2);
+
+                                let operator = prompt("Enter the calculation Operator: ");
+                               
+                                if (operator == "+") {
+                                    result = num1 + num2;
+                                    alert(result);
+                                }
+
+                                loop = prompt("Do you want to continue: [1 = continue ; 0 = Exit] ");
+                                loop = Number(loop);
+                            }
+                                while(loop == 1);
+                            }
+                         
+
+    
+                            // MAKE A FUNTION GET ARGUMENTS WITH RETURN WITHOUT RETURN VALUE
+
+                            function getSum(num1, num2) {
+                                 return num1 + num2
+                             }
+
+                             function getSub(num1, num2) {
+                                return num1 - num2
+                            }
+
+                            function getMultiply(num1, num2) {
+                                return num1 * num2
+                            }
+
+                            function getDivide(num1, num2) {
+                                return num1 / num2
+                            }
+
+                            function arithmaticOperation() {
+
+                                let result = 0;
+                                num1 = Number(prompt("Enter the First Number: "));
+                                num2 = Number(prompt("Enter the Second Number: "));
+
+                                operator = prompt("Enter the Arithmatic Operation Operand: [+ , - ,* , /]");
+
+                                if (operator == '+' ) {
+                                    result= getSum(num1,num2);
+                                }
+                                else if (operator == '-' ) {
+                                    result= getSub(num1,num2);
+                                }
+                                else if (operator == '*' ) {
+                                    result= getMultiply(num1,num2);
+                                }
+                                else if (operator == '/' ) {
+                                    result= getDivide(num1,num2);
+                                }
+                                else {
+                                    console.log("Invalid Operator");
+                                }
+
+                                console.log("The First Number" +num1+ " " +operator+ " the Second Number is " +num2+ " = " +result);
+                            }
+
+
+
+                            function getName(name) {
+                                console.log("Hello " +name+ " Nice Day" );
+                            }
+
+                            function findSquare(num) {
+                                return num * num
+                            }
+       
+                            //getName("Azam");
+                           // sumValues(10,30);
+                           let square = findSquare(3);
+                           console.log(square);
+        
+    </script>
+
+    <div id = "output"> </div>
+
+    <form>
+           <input type="button" value="Condition here" onclick="conditionstat()"/>
+            <input type="button" value="Calculate Tax" onclick="calculateTax()"/>
+            <input type="button" value="Start Calculator" onclick="arithmaticOperation()"/>
+           
+    </form>
+        
+
+</body>
+ </html>
