@@ -1,0 +1,64 @@
+<html>
+ <head>
+<title>
+     Java Script Functions
+</title>
+ </head> 
+<body> 
+    
+     
+    <script>
+       
+        async function myFunction() {
+            return "Hello";
+          }
+
+          const getData = async () => {
+            let y = await "Hello World";
+            console.log(y);
+        }
+        
+         //Call the function
+        console.log("Azam");
+        getData();
+        console.log("Ali");
+        
+        
+        
+        async function f() {
+            return 1;
+          }
+          
+          //f().then(alert); // 1
+
+          async function f1() {
+
+            let promise = new Promise((resolve, reject) => {
+              setTimeout(() => resolve("done!"), 1000)
+            });
+          
+            let result = await promise; // wait until the promise resolves (*)
+          
+            alert(result); // "done!"
+            //console.log("Hi");
+          }
+          
+          f1();
+
+
+
+                   
+                  
+        
+    </script>
+
+    <div id = "output"> </div>
+
+    <form>
+           <input type="button" value="Condition here" onclick="getName('Azam')"/>
+                 
+    </form>
+        
+
+</body>
+ </html>

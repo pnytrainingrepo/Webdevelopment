@@ -8,7 +8,7 @@
     
      
     <script>
-               
+        /*       
         function conditionstat() {
        
                             var a =6;
@@ -74,7 +74,7 @@
                                 while(loop == 1);
                             }
                          
-
+                    */
     
                             // MAKE A FUNTION GET ARGUMENTS WITH RETURN WITHOUT RETURN VALUE
 
@@ -94,13 +94,15 @@
                                 return num1 / num2
                             }
 
+
+
                             function arithmaticOperation() {
 
                                 let result = 0;
-                                num1 = Number(prompt("Enter the First Number: "));
-                                num2 = Number(prompt("Enter the Second Number: "));
+                                let num1 = Number(prompt("Enter the First Number: "));
+                                let num2 = Number(prompt("Enter the Second Number: "));
 
-                                operator = prompt("Enter the Arithmatic Operation Operand: [+ , - ,* , /]");
+                                let operator = prompt("Enter the Arithmatic Operation Operand: [+ , - ,* , /]");
 
                                 if (operator == '+' ) {
                                     result= getSum(num1,num2);
@@ -121,9 +123,20 @@
                                 console.log("The First Number" +num1+ " " +operator+ " the Second Number is " +num2+ " = " +result);
                             }
 
+                            let Hello = (name) => {
+                                console.log(name);
+                                
+                            }
+                            
+                            // CALL ARROW Function
+                             Hello("Azam");
+
+                                               
 
 
-                            function getName(name) {
+
+
+                             async function  getName(name) {
                                 console.log("Hello " +name+ " Nice Day" );
                             }
 

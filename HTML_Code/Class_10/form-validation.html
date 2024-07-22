@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let name = document.forms["myForm"]["name"].value;
+  let fname = document.forms["myForm"]["fname"].value;
+  if (name == "") {
+    alert("Name must be filled out");
+    document.forms["myForm"]["name"].focus();
+    return false;
+  }
+    else if (fname == "") {
+
+      alert("Father Name must be filled out");
+      document.forms["myForm"]["fname"].focus();
+      return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="name">
+  Father Name: <input type="text" name="fname">
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
