@@ -1,0 +1,37 @@
+TAILWIND PROJECT RUNNING STEPS
+
+PRE-REQUISITE INSTALLATIONS:
+1: VISUAL STUDIO CODE (https://code.visualstudio.com/download)
+2: NODEJS (https://nodejs.org/en/download)
+
+STEP NO 1:
+CREATE A VSCODE PROJECT FOLDER
+
+STEP NO 2:
+INSTALL VSCODE EXTENSIONS (LIVE SERVER, TAILWIND CSS INTELLISENSE, PRETTIER)
+
+STEP NO 3:
+ADD PACKAGE.JSON FILE IN PROJECT
+ npm init -y
+
+STEP NO 4:
+ADD TAILWIND.CONFIG.JSON FILE IN PROJECT
+ npm install -D tailwindcss
+ npx tailwindcss init
+
+STEP NO 5:
+Use the @tailwind directive to inject Tailwind’s base, components, and utility styles into your CSS file.
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+
+STEP NO 6:
+CHANGES IN PACKAGE.JSON FILE SCRIPT TAG AS:
+ "build:tailwind": "Tailwind build -i src/style.css -o public/style.css --watch"
+
+STEP NO 7: 
+TO RUN TAILWIND PROJECT
+ npm run build:tailwind
+
+

@@ -1,0 +1,83 @@
+https://play.tailwindcss.com/GH2OQhJ6Nz
+https://play.tailwindcss.com/52BbQGhs0K
+
+<!-- Example for flex-row or flex-col -->
+<div class="bg-gray-100 flex flex-row">
+  <div class="p-2 bg-yellow-200">Block 1</div>
+  <div class="p-2 bg-blue-200">Block 2</div>
+  <div class="p-2 bg-green-200">Block 3</div>
+  <div class="p-2 bg-red-200">Block 4</div>
+</div>
+
+<!-- Example for flex-wrap -->
+<div class="bg-gray-100 flex flex-row">
+  <div class="p-2 bg-yellow-200">Block 1</div>
+  <div class="p-2 bg-blue-200">Block 2</div>
+  <div class="p-2 bg-green-200">Block 3</div>
+  <div class="p-2 bg-red-200">Block 4</div>
+</div>
+
+<!-- Example for flex justify[for alignment of blocks] -->
+<div class="bg-gray-100 flex justify-between">
+  <div class="p-2 bg-yellow-200">Block 1</div>
+  <div class="p-2 bg-blue-200">Block 2</div>
+  <div class="p-2 bg-green-200">Block 3</div>
+  <div class="p-2 bg-red-200">Block 4</div>
+</div>
+
+
+<!-- Example for flex justify[for alignment of blocks] AND Parent Item Alignment -->
+<div class="bg-gray-100 flex justify-between items-center">
+  <div class="p-2 bg-yellow-200">Block 1</div>
+  <div class="p-2 bg-blue-200 text-5xl">Block 2</div>
+  <div class="p-2 bg-green-200">Block 3</div>
+  <div class="p-2 bg-red-200">Block 4</div>
+</div>
+
+
+<!-- Example for flex justify[for alignment of blocks] AND Content Alignment -->
+<div class="mt-12 h-80 bg-gray-100 flex flex-wrap justify-between items-center content-center">
+  <div class="p-2 bg-yellow-200">Block 1 with some more content </div>
+  <div class="p-2 bg-blue-200 text-5xl">Block 2 Text</div>
+  <div class="p-2 bg-green-200">Block 3 Green</div>
+  <div class="p-2 bg-red-200">Block 4 Red</div>
+</div>
+
+
+<!-- Example for flex justify[for alignment of blocks] AND Also Child Items Alignment -->
+<div class="bg-gray-100 flex flex-col justify-between item-stretch">
+  <div class="p-2 bg-yellow-200">Block 1</div>
+  <div class="p-2 bg-blue-200">Block 2</div>
+  <div class="p-2 bg-green-200">Block 3</div>
+  <div class="p-2 bg-red-200 self-center">Block 4</div>
+</div>
+
+<!-- Example for flex alignment of blocks] AND Also Flex-grow [Child Items Size Alignment] -->
+<div class="bg-gray-100 flex justify-between item-stretch">
+  <div class="p-2 bg-yellow-200">Block 1</div>
+  <div class="p-2 bg-blue-200 text-5xl flex-grow">Block 2</div>
+  <div class="p-2 bg-green-200">Block 3</div>
+  <div class="p-2 bg-red-200">Block 4</div>
+</div>
+
+
+<!-- Example for flex alignment of blocks] AND Also Flex-shrink [Child Items Size Alignment] -->
+<div class="bg-gray-100 flex">
+  <div class="w-16 h-16 rounded-full bg-yellow-200 flex-shrink-0"></div>
+  <div class="p-2 bg-blue-200">Some more text in the line of content and paragraj int sccsc vdvdav vaasva vadvava avasvasv avsvvav asvvsavas avasvav avsvavasv scsvsvavadv vsavdvda saasvsavavavav avasvavs asvasvsavad</div>
+</div>
+
+
+<!-- Example for flex flex-col AND Also Child Items Size -->
+<div class="bg-gray-100 flex flex-col md:flex-row justify-between item-stretch">
+  <div class="p-2 bg-yellow-200 flex-1/4">Block 1</div>
+  <div class="p-2 bg-blue-200 flex-1/2">Block 2</div>
+  <div class="p-2 bg-green-200 flex-1/4">Block 3</div>
+</div>
+
+<!-- Example for flex flex-col AND Also Child Items Size & Order -->
+<div class="bg-gray-100 flex flex-col md:flex-row justify-between item-stretch space-x-0 md:space-x-5">
+  <div class="p-2 bg-yellow-200 flex-1/4 ">Block 1</div>
+  <div class="p-2 bg-blue-200 text-5xl flex-1/2 order-first md:order-none">Block 2</div>
+  <div class="p-2 bg-green-200 flex-1/4">Block 3</div>
+</div>
