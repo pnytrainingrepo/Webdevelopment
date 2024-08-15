@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azam Rashid Portfolio</title>
+
+    <!-- Link to the CSS file generated after build process -->
+    <link  href="./output.css" rel="stylesheet">
+    
+    <!-- CDN for Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Add your Meta tags here -->
+    <meta name="description" content="Azam Portfolio Website,Tailwind CSS Portfolio website">
+    <meta name="keywords" content="Azam Portfolio, PNY Student, Tailwind CSS, Portfolio, HTML, CSS, Portfolio Website">
+    <meta name="author" content="Azam Rashid">
+
+
+</head>
+
+<body class="relative flex flex-col items-center bg-white dark:bg-[#121212] font-poppins">
+
+    <!-- navbar component -->
+    <nav class="fixed backdrop-blur-md bg-white dark:bg-[#121212] bg-opacity-60 w-full flex flex-row justify-center z-20">
+            <div class="flex flex-row justify-between items-center w-[72rem] p-4 ">
+                <div class="flex dark:text-white">
+                    <p>AR.</p>
+                </div>
+                <div class="flex flex-row justify-end md:justify-between w-full md:w-auto gap-4 md:gap-10">
+                    <!--Links component - Visible on large screens and not on small screens-->
+                    <ul class="hidden md:flex flex-row items-center text-sm md:text-base gap-4 md:gap-10 border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#121212] dark:text-white rounded-full px-6 md:px-10 w-auto h-12 md:h-16 ">
+                        <li>
+                            <a href="#" rel="noopener noreferrer" class="hover:text-purple-600">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" rel="noopener noreferrer" class="hover:text-purple-600">About</a>
+                        </li>
+                        <li>
+                            <a href="#work" rel="noopener noreferrer" class="hover:text-purple-600">Work</a>
+                        </li>
+                        <li>
+                            <a href="#blogs" rel="noopener noreferrer" class="hover:text-purple-600">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#contact" rel="noopener noreferrer" class="hover:text-purple-600">Contact</a>
+                        </li>
+            
+                    </ul>  
+                    <button onclick="toggleTheme()" aria-label="theme menu"
+                        class=" flex bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
+                        <i  id="theme-toggler-sun" class="ri-sun-fill text-yellow-400 ri-xl" id="sun-icon"></i>
+                        <i  id="theme-toggler-moon" class="ri-moon-clear-line text-blue-800 ri-xl" id="sun-icon"></i>
+                    </button>
+                    <div class="relative">
+
+                    <button 
+                        onclick="togglemenu()"
+                        aria-label="Menu"
+                        class="flex md:hidden bg-white w-12 h-12 md:w-16 md:h-16 flex-row justify-center items-center border-gray-300 dark:border-gray-600 dark:bg-[#121212] dark:text-white border rounded-full">
+                        <i id="menu-toggler" class="ri-menu-line ri-xl"></i>
+                    </button>
+                    <!-- Drop Down componet for Links (Not visible on Large screens) -->
+                    <ul
+                    id="menu-list"
+                        class="fixed flex -top-80 right-0 flex-col items-center text-sm md:text-base gap-4 
+                        md:gap-10 dark:border-gray-600 dark:text-white 
+                        rounded-sm p-6 md:px-10 w-full h-auto bg-white dark:bg-[#121212]
+                        transition-all duration-500 ease-out">
+                        <li>
+                            <a href="#" rel="noopener noreferrer" class="hover:text-purple-600">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" rel="noopener noreferrer" class="hover:text-purple-600">About</a>
+                        </li>
+                        <li>
+                            <a href="#work" rel="noopener noreferrer" class="hover:text-purple-600">Work</a>
+                        </li>
+                        <li>
+                            <a href="#blogs" rel="noopener noreferrer" class="hover:text-purple-600">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#contact" rel="noopener noreferrer" class="hover:text-purple-600">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+                
+            </div>
+    </nav>
+
+    <main class="max-w-6xl dark:text-white text-gray-900">
+
+            <!-- Home section -->
+            <section class="flex flex-col w-full h-auto min-h-screen justify-center relative px-6 md:px-4">
+            
+                <div class="flex flex-col-reverse md:flex-row flex-wrap gap-10 md:gap-0">
+                    <div class="w-full md:w-3/5 flex flex-col justify-center items-start dark:text-white">
+                        <h1 class="text-4xl md:text-5xl font-semibold">Hey there, I'm Azam Rashid</h1>
+                        <h2 class="text-lg md:text-2xl my-2 md:my-6">A Full Stack Developer and Cloud Native Generative AI Engineer based in Pakistan</h2>
+                        <p class="text-sm md:text-base dark:text-neutral-300 text-neutral-600">Full-stack developer & CNAI Engineer with a passion for turning code into seamless user experiences!</p>
+                        <a href="https://www.linkedin.com/in/azamrashid/" target="_blank">
+                        <button aria-label="download"
+                            class="mt-10 flex flex-row items-center gap-2 border border-gray-400 dark:border-gray-600 py-4 px-8 hover:border-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition-all ease-in-out duration-300">
+                            Download CV
+                            <i class="ri-arrow-right-up-line ri-xl"></i>
+    
+                        </button>
+                    </a>
+                    </div>
+                    <div class="w-full md:w-2/5 flex flex-row justify-center items-center">
+                        <img class="w-2/4 md:w-3/4 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+                             src="./profile_image.jpg" alt="Azam Rashid" style="height: 280px; width: 280px; box-shadow: 0 0 15px 5px rgba(164, 163, 164, 0.8);" />
+                    </div>
+                </div>
+            
+            
+            </section>
+            
+            <!-- About Section -->
+            <section class="w-full py-20 px-6 md:px-4" id="about">
+                <h1 class="text-4xl font-semibold">About</h1>
+                <p class="mt-10 dark:text-neutral-300 text-neutral-600">
+                    I am a passionate full-stack software developer with a deep-rooted love for crafting digital solutions that empower and inspire. 
+                    My journey into the world of software development began with a solid foundation in computer science, which I acquired during my years of dedicated study at Ramrao Adik Institute of Technology, where I earned my Bachleor's in Computer Science degree.
+                </p>
+                <p class="mt-4 dark:text-neutral-300 text-neutral-600">
+                    My educational journey provided me with a strong theoretical understanding, but it's my insatiable curiosity and relentless drive that have fueled my practical expertise. I thrive in the dynamic and ever-evolving tech landscape, constantly updating my skills to stay at the forefront of innovation.
+                    As a full-stack developer, I find joy in bringing ideas to life, from conceptualization to deployment. I revel in the challenge of seamlessly connecting the front-end user experience with the robust functionality of the back end. Whether I'm coding in Python, JavaScript, or diving into the intricacies of databases, I approach each project with enthusiasm and precision.
+                </p>
+                <p class="mt-4 dark:text-neutral-300 text-neutral-600">
+                    When I'm not immersed in lines of code, you can find me exploring the latest tech trends, attending hackathons, or contributing to open-source projects. I believe that the tech world is a community, and I'm dedicated to giving back and sharing knowledge whenever I can.
+                </p>
+                <div class="flex flex-row justify-start gap-2 flex-wrap">
+                    <ul class="text-sm flex flex-row gap-2 flex-wrap mt-10">
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out ">HTML</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">CSS</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">SASS</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Bootstrap</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Tailwind CSS</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">JavaScript</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">TypeScipt</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">React</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Next.js</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Express</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Node</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">MongoDB</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">P0stgreSQL</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Python</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">Docker Compose</li>
+                        <li class="px-5 py-2 border border-gray-200 dark:border-gray-600 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">FastApi</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Work Experience section -->
+            <section class="w-full py-20" >
+                    <div class="mb-5 px-6 md:px-4">
+                        <h1 class="text-4xl font-semibold mb-5">Work Experience</h1>
+                    </div>
+                    <div class="flex flex-col p-6 md:p-4">
+                        <div class="flex flex-row justify-between">
+                            <div>
+                                <h2 class="text-2xl font-medium">Senior Full Stack Developer</h2>
+                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Software Engineer</p>
+                            </div>
+                            <p>July 2012 Uptil Now - Now</p>
+                        </div>
+                        <ul class="text-base list-disc list-outside px-4 mt-2 font-light max-w-4xl dark:text-neutral-300 text-neutral-600">
+                            <li>
+                                Working as a Frond-end  And Back-end Developer and also AI Engineer in the Educational Sector.
+                            </li>
+                            <li>Maintaing and adding new features to an Application Portal for an Bise Lahore. Tech stack includes: Java, Spring, MySQL.</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col p-6 md:p-4">
+                        <div class="flex flex-row justify-between">
+                            <div>
+                                <h2 class="text-2xl font-medium">PNY Training Instrutor</h2>
+                                <p class="text-base font-medium text-gray-700 dark:text-gray-200">Web / AI Development</p>
+                            </div>
+                            <p>May 2023 to Uptill Now</p>
+                        </div>
+                        <ul class="text-base list-disc list-inside mt-2 font-light dark:text-neutral-300 text-neutral-600 max-w-4xl">
+                            
+                            <li>
+                                Worked with the team for designing and developing products like Wenester.in and CxDeployer.
+                                    
+                            </li>
+                            <li>Single handedly built and deployed websites like Edunomics.in and Tech.Edunomics.in Tech stack includes: React, Bootstrap, Node, Express,MongoDB.</li>
+                        </ul>
+                    </div>
+            </section>
+            
+            <!-- Works section -->
+            <section class="w-full py-20" id="work">
+                <div class="mb-5 px-6 md:px-4">
+                    <h1 class="text-4xl font-semibold mb-5">Works</h1>
+                </div>
+                <div class="flex flex-col md:flex-row flex-wrap">
+                    <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="./amazon.jpg"  class="rounded-lg"  loading="lazy"  alt="Tailwind CSS Portfolio"  />
+                        <h1 class="text-xl font-medium mt-4">Amazon Clone</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Amazon clone application</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
+                            <i class="ri-links-fill"></i>
+                            amazon.com
+                        </a>
+                    </div>
+            
+                    <div class="flex flex-col items-start w-full md:w-1/3  p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="./facebook.jpg"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"    />
+                        <h1 class="text-xl font-medium mt-4">Facebook Clone</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Facebook clone application</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
+                            <i class="ri-links-fill"></i>
+                            facebook.com
+                        </a>
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="./spotify.png"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"   />
+                        <h1 class="text-xl font-medium mt-4">Spotify Clone</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Spotify clone application</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
+                            <i class="ri-links-fill"></i>
+                            spotify.com
+                        </a>
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100  dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="./netflix.jpg"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"    />
+                        <h1 class="text-xl font-medium mt-4">Netflix Clone</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Netflix clone application</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full  hover:text-purple-600">
+                            <i class="ri-links-fill"></i>
+                            netflix.com
+                        </a>
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="./discord.png"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"   />
+                        <h1 class="text-xl font-medium mt-4">Discord Clone</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack Discord clone application</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full  hover:text-purple-600">
+                            <i class="ri-links-fill"></i>
+                            discord.com
+                        </a>
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 rounded-lg dark:hover:bg-[#222] transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="./airbnb.jpg"  class="rounded-lg" loading="lazy"  alt="Tailwind CSS Portfolio"    />
+                        <h1 class="text-xl font-medium mt-4">AirBnb Clone</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">A Full Stack AirBnb clone application</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 flex flex-row items-center text-sm gap-2 rounded-full hover:text-purple-600">
+                            <i class="ri-links-fill"></i>
+                            airbnb.com
+                        </a>
+                    </div>
+            
+                </div>
+            </section>
+            
+            <!-- What I offer section -->
+            <section class="w-full py-20">
+                <div class="mb-5 px-6 md:px-4">
+                    <h1 class="text-4xl font-semibold mb-5">What I offer</h1>
+                   
+                </div>
+                <div class="flex flex-col md:flex-row justify-between flex-wrap">
+                    <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4">
+                        <i class="ri-paint-brush-line ri-3x text-purple-600"></i>
+                        <h1 class="text-xl font-medium mt-4">UI/UX Design</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Complete User Interface design of a website or an App.</p>
+                    </div>
+                    <div class="flex flex-col items-start  w-full md:w-1/3 p-6 md:p-4">
+                        <i class="ri-quill-pen-line ri-3x text-purple-600"></i>
+                        <h1 class="text-xl font-medium mt-4">Generative AI Development</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Developing AI Portals & GPT Apps in Modern Tech Stacks.</p>
+                    </div>
+                    <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4">
+                        <i class="ri-terminal-box-line ri-3x text-purple-600"></i>
+                        <h1 class="text-xl font-medium mt-4">Web Development</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Developing a website from scratch with all the modern tools.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Blogs Section -->
+            <section class="w-full py-20" id="blogs">
+                <div class="p-6 md:p-4 mb-5">
+                    <h1 class="text-4xl font-semibold mb-5">Blogs</h1>
+                </div>
+                <div class="flex flex-row flex-wrap">
+                    <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"   class="rounded-lg" />
+                        <h1 class="text-xl font-medium mt-4">How to be more Productive at Work?</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">10 Tips on how to work done and be productive.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 px-4 py-2 border border-gray-200 dark:border-gray-600 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
+                            Read more
+                            <i class="ri-arrow-right-up-line ri-lg"></i>
+
+                        </a>
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"   class="rounded-lg"  />
+                        <h1 class="text-xl font-medium mt-4">How better designs help to solve problems</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Know about User Experience and how it helps to solve problems.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 px-4 py-2 border border-gray-200 dark:border-gray-600 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
+                            Read more
+                            <i class="ri-arrow-right-up-line ri-lg"></i>
+
+                        </a>
+
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"  class="rounded-lg"  />
+                        <h1 class="text-xl font-medium mt-4">How to build a career in Tech industry?</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Looking for a career in Tech? Here are some tips to get you started.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 px-4 py-2 border border-gray-200 dark:border-gray-600 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
+                            Read more
+                            <i class="ri-arrow-right-up-line ri-lg"></i>
+
+                        </a>
+                    </div>
+                    
+                    <div class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/2440024/pexels-photo-2440024.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"  alt="Tailwind CSS Portfolio"   class="rounded-lg" />
+                        <h1 class="text-xl font-medium mt-4">How to be more Productive at Work?</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">10 Tips on how to work done and be productive.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 px-4 py-2 border border-gray-200 dark:border-gray-600 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
+                            Read more
+                            <i class="ri-arrow-right-up-line ri-lg"></i>
+
+                        </a>
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222]  rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"   alt="Tailwind CSS Portfolio"  class="rounded-lg"  />
+                        <h1 class="text-xl font-medium mt-4">How better designs help to solve problems</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Know about User Experience and how it helps to solve problems.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 px-4 py-2 border border-gray-200 dark:border-gray-600 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
+                            Read more
+                            <i class="ri-arrow-right-up-line ri-lg"></i>
+
+                        </a>
+
+                    </div>
+            
+                    <div
+                        class="flex flex-col items-start w-full md:w-1/3 p-6 md:p-4 hover:-translate-y-1 hover:bg-gray-100 dark:hover:bg-[#222] rounded-lg transition-all duration-300 ease-in-out cursor-pointer">
+                        <img
+                            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" loading="lazy"   alt="Tailwind CSS Portfolio"  class="rounded-lg"  />
+                        <h1 class="text-xl font-medium mt-4">How to build a career in Tech industry?</h1>
+                        <p class="text-sm mt-2 dark:text-neutral-300 text-neutral-600">Looking for a career in Tech? Here are some tips to get you started.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer"
+                            class="mt-4 px-4 py-2 border border-gray-200 dark:border-gray-600 flex flex-row items-center text-sm gap-2 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
+                            Read more
+                            <i class="ri-arrow-right-up-line ri-lg"></i>
+
+                        </a>
+                    </div>
+                    
+                </div>
+            
+            </section>
+            
+            
+            <!-- Contact section -->
+            <section class="w-full py-20" id="contact">
+                <div class="p-6 md:p-4">
+                    <h1 class="text-4xl font-semibold mb-5">Contact</h1>
+                    <p class="dark:text-neutral-300 text-neutral-600">
+                        I would love to hear from you. Whether you have a question about my services, want to discuss a potential project, or simply want to say hello, don't hesitate to get in touch. I am here to help and excited to start a conversation.
+                    </p>
+                </div>
+                <div class="flex flex-col-reverse md:flex-row flex-wrap">
+                    <div class="w-full md:w-1/2 flex flex-col flex-wrap justify-center gap-4">
+                        <div class="w-full md:w-2/3 rounded-xl p-6 flex flex-col bg- gap-4">
+                            <i class="ri-mail-line ri-xl text-purple-600"></i>
+                            <p>azamrashid@gmail.com</p>
+                        </div>
+                        <div class="w-full md:w-2/3 rounded-xl p-6 flex flex-col bg- gap-4">
+                            <i class="ri-phone-line ri-xl text-purple-600"></i>
+                            <p>+92-3214389364</p>
+                        </div>
+                        <div class="w-full md:w-2/3 rounded-xl p-6 flex flex-col bg- gap-4">
+                            <i class="ri-map-pin-line ri-xl text-purple-600"></i>
+                            <p>Lahore - Pakistan.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-start items-start gap-4 w-full md:w-1/2 p-6 md:p-10">
+                        <h2 class="font-medium text-xl">Send me a Message</h2>
+                        <input type="email" name="name" id="email" 
+                        class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
+                                        placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
+                            placeholder="Your Name" />
+                        <input type="email" name="email" id="email"      class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
+                                        placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
+                   
+                            placeholder="Your Email" />
+            
+                        <textarea rows="3" name="message" id="message"
+                                 class="cursor-pointer block w-full border border-gray-300 dark:border-gray-600 rounded-xl bg-transparent py-4 px-6 text-gray-900 
+                                        placeholder:text-gray-400 hover:border-gray-700 hover:dark:border-gray-300 focus:ring-0 sm:text-sm sm:leading-6"
+                   placeholder="Your Message"></textarea>
+            
+                        <button class="flex flex-row items-center gap-4 px-4 py-2 bg-purple-600 text-white rounded-lg text-lg" aria-label="Send">
+                            Send
+                            <i class="ri-send-plane-2-line"></i>
+                        </button>
+                    </div>
+                </div>
+            
+            </section>
+            
+            <!-- footer section -->
+            <footer class="flex flex-col-reverse md:gap-0 gap-4 md:flex-row justify-between items-center w-full max-w-6xl border-t border-t-gray-300 py-10">
+                <p>
+                    &#169; 2024 Azam Rashid
+                </p>
+                <div class="flex flex-row gap-2 text-xl">
+                    <a href="http://" target="_blank" rel="noopener noreferrer" 
+                    class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-[#222] rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
+                        transition-all ease-in-out duration-300 ">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-[#222] rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
+                                        transition-all ease-in-out duration-300 ">
+                                              <i class="ri-twitter-line"></i>
+                    </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 bg-gray-200 dark:bg-[#222] rounded-full hover:bg-purple-600 hover:text-white hover:-translate-y-2
+                                        transition-all ease-in-out duration-300 ">     <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/azamrashid/" target="_blank" rel="noopener noreferrer" class="flex flex-row justify-center items-center w-12 h-12 border-[1px] border-gray-300 dark:border-gray-600 hover:bg-purple-600 bg-gray-200 dark:bg-[#222] rounded-full hover:text-white hover:-translate-y-2
+                                            transition-all ease-in-out duration-300 ">    <i class="ri-linkedin-line"></i>
+                    </a>
+                </div>
+            </footer>
+         
+    </main>
+
+</body>
+
+</html>
+
+<!-- JavaScript for Menu togglers and Dark Mode functionality --> 
+<script defer>
+
+    //initialize variables for icons
+    const moonIcon = document.querySelector('#theme-toggler-moon')
+    const sunIcon = document.querySelector('#theme-toggler-sun')
+
+    //function to toggle the state of icons
+    function toggleIcons() {
+        moonIcon.classList.toggle('hidden')
+        sunIcon.classList.toggle('hidden')
+    }
+
+    //set intial theme based on local storage and user preference
+    function setInitialTheme() {
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+            moonIcon.classList.add('hidden')
+            localStorage.setItem('theme', 'dark')
+        }
+        else {
+            document.documentElement.classList.remove('dark')
+            sunIcon.classList.add('hidden')
+            localStorage.setItem('theme', 'light')
+        }
+    }
+
+
+    //toggle theme manually
+    function toggleTheme() {
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light'
+            toggleIcons()
+        }
+        else {
+            document.documentElement.classList.add('dark')
+            localStorage.theme = 'dark'
+            toggleIcons()
+        }
+    }
+
+    //calling function to set initial theme
+    setInitialTheme()
+
+    //toggle menu on small screens
+    function togglemenu(){
+        //create variables for button and list
+        const menuButton = document.getElementById('menu-toggler')
+        const menuList = document.getElementById('menu-list')
+        
+        //toggle class to bring menu inside viewport
+        menuList.classList.toggle('-top-80')
+        menuList.classList.toggle('top-20')
+
+        //toggle class to change menu icon to cross icon
+        menuButton.classList.toggle('ri-menu-line')
+        menuButton.classList.toggle('ri-close-line')
+
+    }
+
+
+</script>
