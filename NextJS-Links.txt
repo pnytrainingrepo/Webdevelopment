@@ -1,0 +1,7 @@
+https://blog.logrocket.com/guide-state-management-next-js/
+
+https://medium.com/@ahmedenany9812/state-management-in-next-js-13-app-router-3892a56261ce
+
+https://vercel.com/guides/react-context-state-management-nextjs
+
+https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs
