@@ -9,7 +9,7 @@ const user = {
 export default function Profile() {
   return (
     <Image
-      classNameName="rounded-e-full"
+      className="rounded-e-full"
       src={user.imageUrl}  // Use the correct image URL from the user object
       width={user.imageSize}  // Adjust the size dynamically
       height={user.imageSize}
