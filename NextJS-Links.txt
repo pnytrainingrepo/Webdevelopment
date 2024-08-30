@@ -5,3 +5,5 @@ https://medium.com/@ahmedenany9812/state-management-in-next-js-13-app-router-389
 https://vercel.com/guides/react-context-state-management-nextjs
 
 https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs
+
+https://medium.com/@dtulpa16/next-14-server-actions-tutorial-8126e8622fee

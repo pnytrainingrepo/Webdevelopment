@@ -8,7 +8,7 @@ export default function ButtonCounter() {
     }
   
     return (
-      <button classNameName="text-2xl bg-slate-300 rounded-md" onClick={handleClick}>
+      <button className="text-2xl bg-slate-300 rounded-md" onClick={handleClick}>
         Clicked {count} times
       </button>
     );

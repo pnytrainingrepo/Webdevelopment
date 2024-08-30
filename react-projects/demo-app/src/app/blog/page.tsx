@@ -7,9 +7,9 @@ export default function BlogPage() {
   return (
     <>
       <Header />
-      <h1 classNameName='text-center text-3xl text-blue-600'>Blog page</h1>
+      <h1 className='text-center text-3xl text-blue-600'>Blog page</h1>
       <br/>
-            <div classNameName="text-center">
+            <div className="text-center">
             <button type="button" onClick={() => router.push('/')}>
               GOTO HOME PAGE
             </button>
