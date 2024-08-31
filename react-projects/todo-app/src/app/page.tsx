@@ -14,12 +14,12 @@ export default function Home() {
   const addTodo = () => {
     if (newTodo.trim() === '') return;
     const newTodoItem: Todo = {
-      id: Date.now(), // Unique ID based on timestamp
+      id: Date.now(),
       task: newTodo,
       completed: false,
     };
     setTodos([...todos, newTodoItem]);
-    setNewTodo(''); // Clear input field after adding
+    setNewTodo('');
   };
 
   const toggleTodoCompletion = (id: number) => {
@@ -31,35 +31,59 @@ export default function Home() {
   };
 
   return (
-    <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
-      <h1>Todo List</h1>
-      
-      <div>
-        <input
-          type="text"
-          placeholder="Add a new task"
-          value={newTodo}
-          onChange={(e) => setNewTodo(e.target.value)}
-          style={{ padding: '10px', width: '80%', marginRight: '10px' }}
-        />
-        <button onClick={addTodo} style={{ padding: '10px' }}>Add</button>
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="w-full max-w-md bg-white rounded-lg shadow-md p-8">
+        <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">TODO APP LIST</h1>
+        
+        <div className="flex mb-4">
+          <input
+            type="text"
+            className="flex-grow px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Add a new task"
+            value={newTodo}
+            onChange={(e) => setNewTodo(e.target.value)}
+          />
+          <button
+            onClick={addTodo}
+            className="ml-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+          >
+            Add
+          </button>
+        </div>
+
+        <ul className="space-y-4">
+          {todos.map(todo => (
+            <li
+              key={todo.id}
+              className={`flex justify-between items-center p-4 rounded-lg shadow-sm bg-gray-50 ${
+                todo.completed ? 'line-through text-gray-400' : 'text-gray-800'
+              }`}
+            >
+              <span>{todo.task}</span>
+              <div className="space-x-2">
+                <button
+                  onClick={() => toggleTodoCompletion(todo.id)}
+                  className={`px-4 py-2 rounded-lg ${
+                    todo.completed ? 'bg-green-500 text-white' : 'bg-yellow-500 text-white'
+                  }`}
+                >
+                  {todo.completed ? 'Undo' : 'Complete'}
+                </button>
+                <button
+                  onClick={() => deleteTodo(todo.id)}
+                  className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600"
+                >
+                  Delete
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+        {todos.length === 0 && (
+          <p className="text-center text-gray-500 mt-6">No todos yet! Add some tasks.</p>
+        )}
       </div>
-
-      <ul style={{ listStyle: 'none', padding: 0 }}>
-        {todos.map(todo => (
-          <li key={todo.id} style={{ margin: '10px 0', textDecoration: todo.completed ? 'line-through' : 'none' }}>
-            <span>{todo.task}</span>
-            <div style={{ display: 'inline-block', marginLeft: '20px' }}>
-              <button onClick={() => toggleTodoCompletion(todo.id)} style={{ marginRight: '10px' }}>
-                {todo.completed ? 'Undo' : 'Complete'}
-              </button>
-              <button onClick={() => deleteTodo(todo.id)}>Delete</button>
-            </div>
-          </li>
-        ))}
-      </ul>
-
-      {todos.length === 0 && <p>No todos yet! Add some tasks.</p>}
     </div>
   );
 }
