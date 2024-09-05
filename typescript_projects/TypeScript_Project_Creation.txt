@@ -1,0 +1,16 @@
+Step No 1: Setup your project
+npm init -y
+
+Step No 2:  Install the required packages
+npm install @inquirer/prompts
+npm install chalk
+
+Step No 3: Initialize TypeScript
+npx tsc --init
+
+
+Step 4: Compile and Run the Program
+npx tsc
+
+Step 5: Running Project.
+node calculator.js
