@@ -15,7 +15,7 @@ async function withdraw() {
                 return "Please enter a valid positive amount.";
             if (num > balance) {
                 console.log("Insufficient funds.");
-                runATM();
+                process.exit(1);
             }
             return true;
         }
