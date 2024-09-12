@@ -15,7 +15,7 @@ class TodoApp {
         };
         this.tasks.push(task);
         console.log(`Added: "${task.description}"`);
-    }
+    } // End Add Function
     listTasks() {
         console.log("\nYour Tasks:");
         if (this.tasks.length === 0) {
@@ -26,7 +26,7 @@ class TodoApp {
             const status = task.completed ? "[x]" : "[ ]";
             console.log(`${task.id}. ${status} ${task.description}`);
         });
-    }
+    } //End List Task
     async completeTask() {
         if (this.tasks.length === 0) {
             console.log("No tasks to complete.");
