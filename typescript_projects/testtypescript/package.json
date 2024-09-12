@@ -1,0 +1,16 @@
+{
+  "name": "testtypescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@inquirer/prompts": "^5.5.0",
+    "chalk": "^5.3.0"
+  }
+}

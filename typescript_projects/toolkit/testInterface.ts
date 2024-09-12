@@ -17,7 +17,7 @@ interface Employee extends Person {
 }
 
 const employee: Employee = {
-  name: "Bob",
+  name: "Ali",
   age: 40,
   employeeId: 12345,
   greet: function() {
@@ -30,3 +30,4 @@ employee.greet(); // Output: Hello, I'm Bob and my ID is 12345.
 
 person.greet(); // Output: Hello, my name is Alice.
 console.log(person);
+console.log(employee);
