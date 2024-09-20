@@ -1,4 +1,5 @@
 // components/ItemList.tsx
+'use client'
 import { useEffect, useState } from 'react';
 
 function ItemList() {
@@ -30,7 +31,7 @@ function ItemList() {
       <ul>
         {items.map((item) => (
           <li key={item.id} className="border-b py-2">
-            {item.name} - ${item.price}
+            {item.name} :: ${item.price}
           </li>
         ))}
       </ul>
