@@ -1,0 +1,13 @@
+File Upload [image, doc, sheet, zip, pdf]
+
+1: api route [src/app/api/upload/route.ts] ==> Backend
+
+2: component file upload [app/components/fileupload.tsx
+
+3: Main Page [page.tsx] ==> Call all components of FrontEnd 
+
+4: File Path Save Database
+
+5: Recent File Uploaded View in FrontEnd
+
+6: Check before upload file if its already exists.
