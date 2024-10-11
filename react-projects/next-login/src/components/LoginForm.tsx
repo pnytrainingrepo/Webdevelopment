@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 const LoginForm = () => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -28,7 +28,7 @@ const LoginForm = () => {
     if (data.success) {
       setMessage("Login successful!");
       // Redirect or update UI as needed
-      router.push("/dashboard");
+      router.push('/dashboard');
     } else {
       setMessage(data.message || "Login failed");
     }
