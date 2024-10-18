@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 
 // Initialize PostgreSQL Pool
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_NEON_URL,
 });
 
 // Registration Handler
